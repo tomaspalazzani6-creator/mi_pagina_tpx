@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name"viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi primer diseño responsivo tomas palazzani</title>
+        <style>
+            body {
+                font-family: Arial,sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+
+            header{
+                background-color: #f10f0f;
+                color: rgb(0, 0, 0);
+                text-align: center;
+                padding: 1em;
+            }
+
+            .contenedor {
+                display: grid;
+                gap: 10px;
+                padding: 10px;
+            }
+
+                .caja{
+                    background-color: #1fe3dc;
+                    text-align: center;
+                    padding: 2rem;
+                    border-radius: 10px;
+                    font-weight: bold;
+                }
+
+                @media (min-width: 720px) {
+                    .contenedor{
+                        grid-template-columns: repeat(3, 1fr);
+                    }
+                    body {background-color: #4c1094; }
+                }
+        </style>
+    </head>
+    <body>
+
+        <header>
+            <h1>Diseño responsivo con Grid</h1>
+        </header>
+
+        <div class="contenedor">
+            <div class="caja">Caja 1</div>
+            <div class="caja">Caja 2</div>
+            <div class="caja">Caja 3</div>
+            <div class="caja">Caja 4</div>
+        </div>
+
+    </body>
+</html>
